@@ -1,0 +1,32 @@
+artifact_path: linear_regression_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.22.0
+model_size_bytes: 821
+model_uuid: 58e027a802404090806bee113060c967
+prompts: null
+run_id: 7a20df15d0074a5f901e167ebb12c913
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "Temperatura", "required": true}]'
+  outputs: '[{"type": "long", "name": "Vendas", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-04-27 23:20:24.241053'

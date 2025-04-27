@@ -1,0 +1,5 @@
+name: ice_cream_sales_prediction
+conda_env: conda.yaml
+entry_points:
+  train:
+    command: "python src/train_model.py"
